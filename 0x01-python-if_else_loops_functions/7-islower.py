@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def islower(c):
     asc = ord(c)
     if asc >= 97 and asc <= 122:
