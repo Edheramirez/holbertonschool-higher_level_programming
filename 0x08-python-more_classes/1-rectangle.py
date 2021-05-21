@@ -2,7 +2,6 @@
 class Rectangle:
     """A rectangle with a width and height"""
 
-
     def __init__(self, width=0, height=0):
         """Initialize values for, width, height"""
 
