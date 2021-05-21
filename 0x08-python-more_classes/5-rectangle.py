@@ -70,6 +70,6 @@ class Rectangle:
         """representation rectangle whit #"""
         return "Rectangle({}, {})".format(self.width, self.height)
 
-    def __repr__(self):
-        """representation rectangle whit"""
+    def __del__(self):
+        """message when rectangle it´s deleted"""
         print("Bye rectangle...")
