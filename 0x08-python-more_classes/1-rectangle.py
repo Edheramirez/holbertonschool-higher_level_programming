@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""A rectangle with a width and height"""
+
+
 class Rectangle:
-    """A rectangle with a width and height"""
+    """A class rectangle with seizes"""
 
     def __init__(self, width=0, height=0):
         """Initialize values for, width, height"""
