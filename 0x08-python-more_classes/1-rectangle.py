@@ -11,22 +11,23 @@ class Rectangle:
 
     @property
     def width(self):
+        """getter calls the value"""
         return self.__width
 
     @width.setter
     def width(self, value):
         """take value for width"""
+
         if not type(value) is int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        """Use decorators for validate width"""
 
         self.__width = value
-        """evaluate and gives values for width"""
 
     @property
     def height(self):
+        """getter calls the value"""
         return self.__height
 
     @height.setter
@@ -36,7 +37,5 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        """Use decorators for validate height"""
 
         self.__height = value
-        """evaluate and gives values for height"""
