@@ -15,4 +15,4 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-            """otherwise, increment __nb_objects and assign the new value to the public instance attribute id"""
+            """increment __nb_objectsandassignthenewvaluepublicinstanceattid"""
