@@ -9,4 +9,4 @@ def no_c(my_string):
     for character in my_string:
         if not (character == "c" or character == "C"):
             new_str += character
-    print(new_str)
+    return new_str
