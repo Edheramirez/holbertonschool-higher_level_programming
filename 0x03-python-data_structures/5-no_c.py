@@ -3,6 +3,7 @@
 removes all characters c and C from a string
 """
 
+
 def no_c(my_string):
     """define no c"""
     new_str = str()
