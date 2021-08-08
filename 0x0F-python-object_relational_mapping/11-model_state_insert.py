@@ -23,5 +23,5 @@ if __name__ == "__main__":
     print(session.query(State).filter_by(name="Lousiana").first().id)
 
     session.commit()
-
+    session.flush()
     session.close()
