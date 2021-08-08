@@ -4,7 +4,6 @@
 
 import sys
 from model_state import Base, State
-from sqlalchemy import Column, Integer, String
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -24,4 +23,5 @@ if __name__ == "__main__":
     print(session.query(State).filter_by(name="Lousiana").first().id)
 
     session.commit()
+
     session.close()
