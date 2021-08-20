@@ -3,18 +3,22 @@
 http://0.0.0.0:5000/search_user with the letter as a parameter"""
 
 
-import requests
 from sys import argv
+from requests import post, get
 
 if __name__ == "__main__":
-    url = "http://0.0.0.0:5000/search_user"
-    data = {"q": argv[1][0] if len(argv) > 1 else ""}
-    response = requests.post(url, data=data)
     try:
-        d = response.json()
-        if not d:
-            print("No result")
+        _data = {'q': argv[1]}
+    except:
+        _data = {'q': ""}
+
+    url = 'http://0.0.0.0:5000/search_user'
+    try:
+        r = post(url, data=_data)
+        rj = r.json()
+        if (len(rj) is not 0):
+            print("[{}] {}".format(rj.get('id'), rj.get('name')))
         else:
-            print("[{}] {}".format(d.get("id"), d.get("name")))
+            print('No result')
     except ValueError:
-        print("Not a valid JSON");0;0;0;1_
+        print('Not a valid JSON')
