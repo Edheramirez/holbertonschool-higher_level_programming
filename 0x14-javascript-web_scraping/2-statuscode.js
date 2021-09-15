@@ -7,5 +7,5 @@ const request = require('request');
 request(argv[2], (err, { statusCode }) => {
   if (err) return console.log(err);
 
-    console.log(`code: ${statusCode}`);
+  console.log(`code: ${statusCode}`);
 });
